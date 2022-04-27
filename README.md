@@ -15,7 +15,7 @@
   - `mod_pub_use` => `mod x; pub use x::*` for a public flatten modules with separated source writting.
   - `pub_mod_pub_use` => `pub x; pub use x::x` for a public nested modules with flatten alias in the root.
 
-I am tired of writing the "xxx" pattern over and over again for structured beatiful source code!😝 And I like the stylish attribute proc-macro style syntax sugars.💖
+I am tired of writing the `mod x; use x::*;` pattern over and over again for structured beatiful source code!😝 And I like the stylish attribute proc-macro style syntax sugars.💖
 
 ## Example: [examples/mod_pub_use/](examples/mod_pub_use/)
 
