@@ -58,6 +58,37 @@ pub struct X
 }
 ```
 
+## for Debuggin
+
+`retrieve` has `print` feature. It will be show a part of evaluated syntax:
+
+eg. Run the example with `print` feature:
+
+```sh
+cargo run --example work_arround --features print
+```
+
+Then, you will get something like it in the build messages:
+
+```sh
+   Compiling retrieve v1.0.1 (C:\Users\usagi\tmp\retrieve)
+[(proc-macro)retrieve::mod_pub_use+print]
+mod x; pub use x::*;
+fn main()
+{ let x = X :: new(1) ; println! ("{:?} {:?}", x.a(), x.to_string()) ; }
+[(proc-macro)retrieve::mod_pub_use+print]
+mod a; pub use a::*;
+mod new; pub use new::*;
+mod _impl_already_traits; pub use _impl_already_traits::*;
+pub struct X { a : i32 }
+[(proc-macro)retrieve::mod_pub_use+print]
+mod display; pub use display::*;
+use super :: X ;
+    Finished dev [unoptimized + debuginfo] target(s) in 1.41s
+     Running `target\debug\examples\work_arround.exe`
+1 "One!"
+```
+
 ## LICENSE
 
 - [MIT](LICENSE.md)
