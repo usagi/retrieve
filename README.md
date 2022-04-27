@@ -23,8 +23,8 @@ I am tired of writing the "xxx" pattern over and over again for structured beati
   - main.rs
   - x.rs ; Or it can move x/mod.rs if you like module-name/mod.rs style.
   - x/
-    - a.rs ; crate::x::a::*
-    - b.rs ; crate::x::b::*
+    - a.rs ; `crate::x::a::*`
+    - b.rs ; `crate::x::b::*`
 
 1. main.rs:
 
