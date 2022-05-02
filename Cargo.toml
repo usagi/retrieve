@@ -3,7 +3,7 @@ name = "retrieve"
 authors = ["USAGI.NETWORK / Usagi Ito <the@usagi.network>"]
 categories = ["rust-patterns"]
 description = "#[{pub_}mod_{pub_}use(a,b,c,...)] => {pub }mod a; {pub }use a::*; and also b,c,..."
-documentation = "https://docs.rs/tia/"
+documentation = "https://docs.rs/retrieve/"
 edition = "2021"
 keywords = ["mod", "use", "proc-macro", "pub", "attribute"]
 license = "MIT"
