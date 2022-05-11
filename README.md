@@ -17,7 +17,7 @@
 
 I am tired of writing the `mod x; use x::*;` pattern over and over again for structured beatiful source code!😝 And I like the stylish attribute proc-macro style syntax sugars.💖
 
-## Example: [examples/mod_pub_use/](examples/mod_pub_use/)
+## Example: [examples/](examples/)
 
 - src/
   - main.rs
